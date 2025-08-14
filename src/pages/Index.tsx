@@ -90,6 +90,7 @@ const Index = () => {
             <VideoPlayer
               src={selectedVideo.video_url}
               title={`Video ${selectedVideo.file_id}`}
+              autoPlay={true}
               onLoadStart={() => setIsVideoLoading(true)}
               onLoadEnd={() => setIsVideoLoading(false)}
               onError={handleVideoError}
